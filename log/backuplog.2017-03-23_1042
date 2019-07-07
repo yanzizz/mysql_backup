@@ -1,0 +1,1152 @@
+2017-03-23 10:42:25,159 - CommandExecuter - INFO - STD:
+Unrecognized character \x01; marked by <-- HERE after <-- HERE near column 1 at - line 1374.
+170323 10:42:20 Connecting to MySQL server host: localhost, user: regadmin, password: set, port: not set, socket: /var/lib/mysql/mysql.sock
+Using server version 5.6.26-log
+/bin/xtrabackup version 2.3.7 based on MySQL server 5.6.24 Linux (x86_64) (revision id: 40f611f)
+xtrabackup: uses posix_fadvise().
+xtrabackup: cd to /var/lib/mysql
+xtrabackup: open files limit requested 0, set to 1024
+xtrabackup: using the following InnoDB configuration:
+xtrabackup:   innodb_data_home_dir = ./
+xtrabackup:   innodb_data_file_path = ibdata1:12M:autoextend
+xtrabackup:   innodb_log_group_home_dir = ./
+xtrabackup:   innodb_log_files_in_group = 2
+xtrabackup:   innodb_log_file_size = 50331648
+170323 10:42:20 >> log scanned up to (184746748)
+xtrabackup: Generating a list of tablespaces
+170323 10:42:21 [01] Copying ./ibdata1 to /data/dbbak/12_full_2017-03-23_1042/ibdata1
+170323 10:42:21 [01]        ...done
+170323 10:42:21 [01] Copying ./mysql/innodb_table_stats.ibd to /data/dbbak/12_full_2017-03-23_1042/mysql/innodb_table_stats.ibd
+170323 10:42:21 [01]        ...done
+170323 10:42:21 [01] Copying ./mysql/innodb_index_stats.ibd to /data/dbbak/12_full_2017-03-23_1042/mysql/innodb_index_stats.ibd
+170323 10:42:21 [01]        ...done
+170323 10:42:21 [01] Copying ./mysql/slave_relay_log_info.ibd to /data/dbbak/12_full_2017-03-23_1042/mysql/slave_relay_log_info.ibd
+170323 10:42:21 [01]        ...done
+170323 10:42:21 [01] Copying ./mysql/slave_master_info.ibd to /data/dbbak/12_full_2017-03-23_1042/mysql/slave_master_info.ibd
+170323 10:42:21 [01]        ...done
+170323 10:42:21 [01] Copying ./mysql/slave_worker_info.ibd to /data/dbbak/12_full_2017-03-23_1042/mysql/slave_worker_info.ibd
+170323 10:42:21 [01]        ...done
+170323 10:42:21 [01] Copying ./appstoredb/operationportal_v1@002e0@002e0@0026appbasicinfo_v1@002e0@002e0.ibd to /data/dbbak/12_full_2017-03-23_1042/appstoredb/operationportal_v1@002e0@002e0@0026appbasicinfo_v1@002e0@002e0.ibd
+170323 10:42:21 [01]        ...done
+170323 10:42:21 [01] Copying ./appstoredb/operationportal_v1@002e0@002e0@0026appconfig_v1@002e0@002e0.ibd to /data/dbbak/12_full_2017-03-23_1042/appstoredb/operationportal_v1@002e0@002e0@0026appconfig_v1@002e0@002e0.ibd
+170323 10:42:21 [01]        ...done
+170323 10:42:21 [01] Copying ./appstoredb/operationportal_v1@002e0@002e0@0026appextendedinfo_v1@002e0@002e0.ibd to /data/dbbak/12_full_2017-03-23_1042/appstoredb/operationportal_v1@002e0@002e0@0026appextendedinfo_v1@002e0@002e0.ibd
+170323 10:42:21 [01]        ...done
+170323 10:42:21 [01] Copying ./bamdb/reg_association.ibd to /data/dbbak/12_full_2017-03-23_1042/bamdb/reg_association.ibd
+170323 10:42:21 [01]        ...done
+170323 10:42:21 [01] Copying ./bamdb/reg_cluster_lock.ibd to /data/dbbak/12_full_2017-03-23_1042/bamdb/reg_cluster_lock.ibd
+170323 10:42:21 [01]        ...done
+170323 10:42:21 [01] Copying ./bamdb/reg_comment.ibd to /data/dbbak/12_full_2017-03-23_1042/bamdb/reg_comment.ibd
+170323 10:42:21 [01]        ...done
+170323 10:42:21 [01] Copying ./bamdb/reg_content.ibd to /data/dbbak/12_full_2017-03-23_1042/bamdb/reg_content.ibd
+170323 10:42:21 [01]        ...done
+170323 10:42:21 [01] Copying ./bamdb/reg_content_history.ibd to /data/dbbak/12_full_2017-03-23_1042/bamdb/reg_content_history.ibd
+170323 10:42:21 [01]        ...done
+170323 10:42:21 [01] Copying ./bamdb/reg_log.ibd to /data/dbbak/12_full_2017-03-23_1042/bamdb/reg_log.ibd
+170323 10:42:21 [01]        ...done
+170323 10:42:21 [01] Copying ./bamdb/reg_path.ibd to /data/dbbak/12_full_2017-03-23_1042/bamdb/reg_path.ibd
+170323 10:42:21 [01]        ...done
+170323 10:42:21 [01] Copying ./bamdb/reg_property.ibd to /data/dbbak/12_full_2017-03-23_1042/bamdb/reg_property.ibd
+170323 10:42:21 [01]        ...done
+170323 10:42:21 [01] Copying ./bamdb/reg_rating.ibd to /data/dbbak/12_full_2017-03-23_1042/bamdb/reg_rating.ibd
+170323 10:42:21 [01]        ...done
+170323 10:42:21 [01] Copying ./bamdb/reg_resource.ibd to /data/dbbak/12_full_2017-03-23_1042/bamdb/reg_resource.ibd
+170323 10:42:21 [01]        ...done
+170323 10:42:21 [01] Copying ./bamdb/reg_resource_comment.ibd to /data/dbbak/12_full_2017-03-23_1042/bamdb/reg_resource_comment.ibd
+170323 10:42:21 [01]        ...done
+170323 10:42:21 [01] Copying ./bamdb/reg_resource_history.ibd to /data/dbbak/12_full_2017-03-23_1042/bamdb/reg_resource_history.ibd
+170323 10:42:21 [01]        ...done
+170323 10:42:21 [01] Copying ./bamdb/reg_resource_property.ibd to /data/dbbak/12_full_2017-03-23_1042/bamdb/reg_resource_property.ibd
+170323 10:42:21 [01]        ...done
+170323 10:42:21 [01] Copying ./bamdb/reg_resource_rating.ibd to /data/dbbak/12_full_2017-03-23_1042/bamdb/reg_resource_rating.ibd
+170323 10:42:21 [01]        ...done
+170323 10:42:21 [01] Copying ./bamdb/reg_resource_tag.ibd to /data/dbbak/12_full_2017-03-23_1042/bamdb/reg_resource_tag.ibd
+170323 10:42:21 [01]        ...done
+170323 10:42:21 [01] Copying ./bamdb/reg_snapshot.ibd to /data/dbbak/12_full_2017-03-23_1042/bamdb/reg_snapshot.ibd
+170323 10:42:21 [01]        ...done
+170323 10:42:21 [01] Copying ./bamdb/reg_tag.ibd to /data/dbbak/12_full_2017-03-23_1042/bamdb/reg_tag.ibd
+170323 10:42:21 [01]        ...done
+170323 10:42:21 [01] Copying ./bamdb/um_claim.ibd to /data/dbbak/12_full_2017-03-23_1042/bamdb/um_claim.ibd
+170323 10:42:21 [01]        ...done
+170323 10:42:21 [01] Copying ./bamdb/um_claim_behavior.ibd to /data/dbbak/12_full_2017-03-23_1042/bamdb/um_claim_behavior.ibd
+170323 10:42:21 [01]        ...done
+170323 10:42:21 [01] Copying ./bamdb/um_dialect.ibd to /data/dbbak/12_full_2017-03-23_1042/bamdb/um_dialect.ibd
+170323 10:42:21 [01]        ...done
+170323 10:42:21 [01] Copying ./bamdb/um_hybrid_remember_me.ibd to /data/dbbak/12_full_2017-03-23_1042/bamdb/um_hybrid_remember_me.ibd
+170323 10:42:21 [01]        ...done
+170323 10:42:21 [01] Copying ./bamdb/um_hybrid_role.ibd to /data/dbbak/12_full_2017-03-23_1042/bamdb/um_hybrid_role.ibd
+170323 10:42:21 [01]        ...done
+170323 10:42:21 [01] Copying ./bamdb/um_hybrid_user_role.ibd to /data/dbbak/12_full_2017-03-23_1042/bamdb/um_hybrid_user_role.ibd
+170323 10:42:21 [01]        ...done
+170323 10:42:21 [01] Copying ./bamdb/um_permission.ibd to /data/dbbak/12_full_2017-03-23_1042/bamdb/um_permission.ibd
+170323 10:42:21 [01]        ...done
+170323 10:42:21 [01] Copying ./bamdb/um_profile_config.ibd to /data/dbbak/12_full_2017-03-23_1042/bamdb/um_profile_config.ibd
+170323 10:42:21 [01]        ...done
+170323 10:42:21 [01] Copying ./bamdb/um_role.ibd to /data/dbbak/12_full_2017-03-23_1042/bamdb/um_role.ibd
+170323 10:42:21 [01]        ...done
+170323 10:42:21 [01] Copying ./bamdb/um_role_permission.ibd to /data/dbbak/12_full_2017-03-23_1042/bamdb/um_role_permission.ibd
+170323 10:42:21 [01]        ...done
+170323 10:42:21 [01] Copying ./bamdb/um_tenant.ibd to /data/dbbak/12_full_2017-03-23_1042/bamdb/um_tenant.ibd
+170323 10:42:21 [01]        ...done
+170323 10:42:21 [01] Copying ./bamdb/um_user.ibd to /data/dbbak/12_full_2017-03-23_1042/bamdb/um_user.ibd
+170323 10:42:21 [01]        ...done
+170323 10:42:21 [01] Copying ./bamdb/um_user_attribute.ibd to /data/dbbak/12_full_2017-03-23_1042/bamdb/um_user_attribute.ibd
+170323 10:42:21 [01]        ...done
+170323 10:42:21 [01] Copying ./bamdb/um_user_permission.ibd to /data/dbbak/12_full_2017-03-23_1042/bamdb/um_user_permission.ibd
+170323 10:42:21 [01]        ...done
+170323 10:42:21 [01] Copying ./bamdb/um_user_role.ibd to /data/dbbak/12_full_2017-03-23_1042/bamdb/um_user_role.ibd
+170323 10:42:21 [01]        ...done
+170323 10:42:21 [01] Copying ./omrest/adapterstatus.ibd to /data/dbbak/12_full_2017-03-23_1042/omrest/adapterstatus.ibd
+170323 10:42:21 [01]        ...done
+170323 10:42:21 [01] Copying ./omrest/event.ibd to /data/dbbak/12_full_2017-03-23_1042/omrest/event.ibd
+170323 10:42:21 >> log scanned up to (184749196)
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./omrest/events.ibd to /data/dbbak/12_full_2017-03-23_1042/omrest/events.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./omrest/grouproles.ibd to /data/dbbak/12_full_2017-03-23_1042/omrest/grouproles.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./omrest/logtags.ibd to /data/dbbak/12_full_2017-03-23_1042/omrest/logtags.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./omrest/pluginstatus.ibd to /data/dbbak/12_full_2017-03-23_1042/omrest/pluginstatus.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./omrest/resource_version.ibd to /data/dbbak/12_full_2017-03-23_1042/omrest/resource_version.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./omrest/trackrecords.ibd to /data/dbbak/12_full_2017-03-23_1042/omrest/trackrecords.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./omrest/um_grant.ibd to /data/dbbak/12_full_2017-03-23_1042/omrest/um_grant.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./omrest/um_group_permission.ibd to /data/dbbak/12_full_2017-03-23_1042/omrest/um_group_permission.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./omrest/um_permission.ibd to /data/dbbak/12_full_2017-03-23_1042/omrest/um_permission.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./omrest/um_role.ibd to /data/dbbak/12_full_2017-03-23_1042/omrest/um_role.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./omrest/um_role_permission.ibd to /data/dbbak/12_full_2017-03-23_1042/omrest/um_role_permission.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./omrest/um_user.ibd to /data/dbbak/12_full_2017-03-23_1042/omrest/um_user.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./omrest/um_usergroup.ibd to /data/dbbak/12_full_2017-03-23_1042/omrest/um_usergroup.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./omrest/urlusetable.ibd to /data/dbbak/12_full_2017-03-23_1042/omrest/urlusetable.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./omrest/usergroups.ibd to /data/dbbak/12_full_2017-03-23_1042/omrest/usergroups.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./omrest/users.ibd to /data/dbbak/12_full_2017-03-23_1042/omrest/users.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./operation@002dbackend/trackrecords.ibd to /data/dbbak/12_full_2017-03-23_1042/operation@002dbackend/trackrecords.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./operation@002dbackend/urlusetable.ibd to /data/dbbak/12_full_2017-03-23_1042/operation@002dbackend/urlusetable.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./operation@002duser/um_grant.ibd to /data/dbbak/12_full_2017-03-23_1042/operation@002duser/um_grant.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./operation@002duser/um_group_permission.ibd to /data/dbbak/12_full_2017-03-23_1042/operation@002duser/um_group_permission.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./operation@002duser/um_permission.ibd to /data/dbbak/12_full_2017-03-23_1042/operation@002duser/um_permission.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./operation@002duser/um_role.ibd to /data/dbbak/12_full_2017-03-23_1042/operation@002duser/um_role.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./operation@002duser/um_role_permission.ibd to /data/dbbak/12_full_2017-03-23_1042/operation@002duser/um_role_permission.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./operation@002duser/um_user.ibd to /data/dbbak/12_full_2017-03-23_1042/operation@002duser/um_user.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./operation@002duser/um_usergroup.ibd to /data/dbbak/12_full_2017-03-23_1042/operation@002duser/um_usergroup.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./pds/appentfytest5_v1@002e0@002e0@0026fytest201610311433_v1@002e0@002e0.ibd to /data/dbbak/12_full_2017-03-23_1042/pds/appentfytest5_v1@002e0@002e0@0026fytest201610311433_v1@002e0@002e0.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./pds/appentfytest6_v1@002e0@002e0@0026resumemodelmongodbfzt0001_v1@002e0@002e0.ibd to /data/dbbak/12_full_2017-03-23_1042/pds/appentfytest6_v1@002e0@002e0@0026resumemodelmongodbfzt0001_v1@002e0@002e0.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./pds/appentfytest6_v1@002e0@002e0@0026resumemodelmongodbtzt0001_v1@002e0@002e0.ibd to /data/dbbak/12_full_2017-03-23_1042/pds/appentfytest6_v1@002e0@002e0@0026resumemodelmongodbtzt0001_v1@002e0@002e0.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./pds/appentfytest6_v1@002e0@002e0@0026resumemodelmysqlfzt0001_v1@002e0@002e0.ibd to /data/dbbak/12_full_2017-03-23_1042/pds/appentfytest6_v1@002e0@002e0@0026resumemodelmysqlfzt0001_v1@002e0@002e0.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./pds/appentfytest6_v1@002e0@002e0@0026resumemodelmysqltzt0001_v1@002e0@002e0.ibd to /data/dbbak/12_full_2017-03-23_1042/pds/appentfytest6_v1@002e0@002e0@0026resumemodelmysqltzt0001_v1@002e0@002e0.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./pds/asexamine_v1@002e0@002e0@0026asexaminetabletemp_v1@002e0@002e0.ibd to /data/dbbak/12_full_2017-03-23_1042/pds/asexamine_v1@002e0@002e0@0026asexaminetabletemp_v1@002e0@002e0.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./pds/asexamine_v1@002e0@002e0@0026cbusincomes_v1@002e0@002e0.ibd to /data/dbbak/12_full_2017-03-23_1042/pds/asexamine_v1@002e0@002e0@0026cbusincomes_v1@002e0@002e0.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./pds/asexamine_v1@002e0@002e0@0026cexaminecominfo_v1@002e0@002e0.ibd to /data/dbbak/12_full_2017-03-23_1042/pds/asexamine_v1@002e0@002e0@0026cexaminecominfo_v1@002e0@002e0.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./pds/asexamine_v1@002e0@002e0@0026cexamineempinfo_v1@002e0@002e0.ibd to /data/dbbak/12_full_2017-03-23_1042/pds/asexamine_v1@002e0@002e0@0026cexamineempinfo_v1@002e0@002e0.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./pds/asexamine_v1@002e0@002e0@0026cexaminemain_v1@002e0@002e0.ibd to /data/dbbak/12_full_2017-03-23_1042/pds/asexamine_v1@002e0@002e0@0026cexaminemain_v1@002e0@002e0.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./pds/asexamine_v1@002e0@002e0@0026cexamineproinc_v1@002e0@002e0.ibd to /data/dbbak/12_full_2017-03-23_1042/pds/asexamine_v1@002e0@002e0@0026cexamineproinc_v1@002e0@002e0.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./pds/asexamine_v1@002e0@002e0@0026cexaminetaxinfo_v1@002e0@002e0.ibd to /data/dbbak/12_full_2017-03-23_1042/pds/asexamine_v1@002e0@002e0@0026cexaminetaxinfo_v1@002e0@002e0.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./pds/asexamine_v1@002e0@002e0@0026cinnincomes_v1@002e0@002e0.ibd to /data/dbbak/12_full_2017-03-23_1042/pds/asexamine_v1@002e0@002e0@0026cinnincomes_v1@002e0@002e0.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./pds/asexamine_v1@002e0@002e0@0026cinnprojects_v1@002e0@002e0.ibd to /data/dbbak/12_full_2017-03-23_1042/pds/asexamine_v1@002e0@002e0@0026cinnprojects_v1@002e0@002e0.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./pds/asexamine_v1@002e0@002e0@0026cresearchfiles_v1@002e0@002e0.ibd to /data/dbbak/12_full_2017-03-23_1042/pds/asexamine_v1@002e0@002e0@0026cresearchfiles_v1@002e0@002e0.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./pds/enterprisenoticemgtapp_v1@002e0@002e0@0026notification3_v1@002e0@002e0.ibd to /data/dbbak/12_full_2017-03-23_1042/pds/enterprisenoticemgtapp_v1@002e0@002e0@0026notification3_v1@002e0@002e0.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./pds/enterpriseusermgtapp_v1@002e0@002e0@0026appnoticeconf_v1@002e0@002e1.ibd to /data/dbbak/12_full_2017-03-23_1042/pds/enterpriseusermgtapp_v1@002e0@002e0@0026appnoticeconf_v1@002e0@002e1.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./pds/enterpriseusermgtapp_v1@002e0@002e0@0026noticeconfiguration_v1@002e0@002e2.ibd to /data/dbbak/12_full_2017-03-23_1042/pds/enterpriseusermgtapp_v1@002e0@002e0@0026noticeconfiguration_v1@002e0@002e2.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./pds/enterpriseusermgtapp_v1@002e0@002e0@0026orguser_v1@002e0@002e0.ibd to /data/dbbak/12_full_2017-03-23_1042/pds/enterpriseusermgtapp_v1@002e0@002e0@0026orguser_v1@002e0@002e0.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./pds/eservicemysqltest_v1@002e0@002e0@0026tenantfalsetest1_v1@002e0@002e0.ibd to /data/dbbak/12_full_2017-03-23_1042/pds/eservicemysqltest_v1@002e0@002e0@0026tenantfalsetest1_v1@002e0@002e0.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./pds/eservicemysqltest_v1@002e0@002e0@0026tenantfalsetest5_v1@002e0@002e0.ibd to /data/dbbak/12_full_2017-03-23_1042/pds/eservicemysqltest_v1@002e0@002e0@0026tenantfalsetest5_v1@002e0@002e0.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./pds/eservicemysqltest_v1@002e0@002e0@0026tenanttruetest1_v1@002e0@002e0.ibd to /data/dbbak/12_full_2017-03-23_1042/pds/eservicemysqltest_v1@002e0@002e0@0026tenanttruetest1_v1@002e0@002e0.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./pds/geinfomationechange_v1@002e0@002e0@0026commessagetenant_v1@002e0@002e0.ibd to /data/dbbak/12_full_2017-03-23_1042/pds/geinfomationechange_v1@002e0@002e0@0026commessagetenant_v1@002e0@002e0.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./pds/geinfomationechange_v1@002e0@002e0@0026depinfo_v1@002e0@002e0.ibd to /data/dbbak/12_full_2017-03-23_1042/pds/geinfomationechange_v1@002e0@002e0@0026depinfo_v1@002e0@002e0.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./pds/geinfomationechange_v1@002e0@002e0@0026mmessageshow_v1@002e0@002e0.ibd to /data/dbbak/12_full_2017-03-23_1042/pds/geinfomationechange_v1@002e0@002e0@0026mmessageshow_v1@002e0@002e0.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./pds/tongwlgzt_v1@002e0@002e0@0026addstudent03p1_v1@002e0@002e0.ibd to /data/dbbak/12_full_2017-03-23_1042/pds/tongwlgzt_v1@002e0@002e0@0026addstudent03p1_v1@002e0@002e0.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./pds/tongwlgzt_v1@002e0@002e0@0026jl_v1@002e0@002e0.ibd to /data/dbbak/12_full_2017-03-23_1042/pds/tongwlgzt_v1@002e0@002e0@0026jl_v1@002e0@002e0.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./pds/tongwlgzt_v1@002e0@002e0@0026jsontest_v1@002e0@002e0.ibd to /data/dbbak/12_full_2017-03-23_1042/pds/tongwlgzt_v1@002e0@002e0@0026jsontest_v1@002e0@002e0.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./pds/tongwlgzt_v1@002e0@002e0@0026uniqueindex_v1@002e0@002e0.ibd to /data/dbbak/12_full_2017-03-23_1042/pds/tongwlgzt_v1@002e0@002e0@0026uniqueindex_v1@002e0@002e0.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./pds/tongwlgzt_v1@002e0@002e8@0026tiszyfw017test1_v1@002e0@002e0.ibd to /data/dbbak/12_full_2017-03-23_1042/pds/tongwlgzt_v1@002e0@002e8@0026tiszyfw017test1_v1@002e0@002e0.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/am_api.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/am_api.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/am_api_comments.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/am_api_comments.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/am_api_default_version.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/am_api_default_version.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/am_api_lc_event.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/am_api_lc_event.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/am_api_ratings.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/am_api_ratings.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/am_api_scopes.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/am_api_scopes.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/am_api_url_mapping.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/am_api_url_mapping.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/am_app_key_domain_mapping.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/am_app_key_domain_mapping.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/am_application.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/am_application.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/am_application_key_mapping.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/am_application_key_mapping.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/am_application_registration.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/am_application_registration.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/am_external_stores.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/am_external_stores.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/am_subscriber.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/am_subscriber.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/am_subscription.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/am_subscription.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/am_subscription_key_mapping.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/am_subscription_key_mapping.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/am_tier_permissions.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/am_tier_permissions.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/am_workflows.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/am_workflows.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/idn_associated_id.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/idn_associated_id.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/idn_base_table.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/idn_base_table.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/idn_identity_meta_data.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/idn_identity_meta_data.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/idn_identity_user_data.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/idn_identity_user_data.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/idn_oauth1a_access_token.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/idn_oauth1a_access_token.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/idn_oauth1a_request_token.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/idn_oauth1a_request_token.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/idn_oauth2_access_token.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/idn_oauth2_access_token.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/idn_oauth2_authorization_code.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/idn_oauth2_authorization_code.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/idn_oauth2_resource_scope.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/idn_oauth2_resource_scope.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/idn_oauth2_scope.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/idn_oauth2_scope.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/idn_oauth_consumer_apps.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/idn_oauth_consumer_apps.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/idn_openid_associations.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/idn_openid_associations.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/idn_openid_remember_me.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/idn_openid_remember_me.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/idn_openid_user_rps.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/idn_openid_user_rps.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/idn_scim_group.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/idn_scim_group.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/idn_scim_provider.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/idn_scim_provider.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/idn_sts_store.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/idn_sts_store.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/idn_thrift_session.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/idn_thrift_session.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/idp.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/idp.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/idp_authenticator.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/idp_authenticator.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/idp_authenticator_property.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/idp_authenticator_property.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/idp_claim.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/idp_claim.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/idp_claim_mapping.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/idp_claim_mapping.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/idp_local_claim.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/idp_local_claim.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/idp_prov_config_property.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/idp_prov_config_property.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/idp_provisioning_config.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/idp_provisioning_config.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/idp_provisioning_entity.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/idp_provisioning_entity.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/idp_role.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/idp_role.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/idp_role_mapping.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/idp_role_mapping.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/reg_association.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/reg_association.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/reg_cluster_lock.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/reg_cluster_lock.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/reg_comment.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/reg_comment.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/reg_content.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/reg_content.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/reg_content_history.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/reg_content_history.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/reg_log.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/reg_log.ibd
+170323 10:42:22 >> log scanned up to (184749550)
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/reg_path.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/reg_path.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/reg_property.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/reg_property.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/reg_rating.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/reg_rating.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/reg_resource.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/reg_resource.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/reg_resource_comment.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/reg_resource_comment.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/reg_resource_history.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/reg_resource_history.ibd
+170323 10:42:22 [01]        ...done
+170323 10:42:22 [01] Copying ./regdb/reg_resource_property.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/reg_resource_property.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./regdb/reg_resource_rating.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/reg_resource_rating.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./regdb/reg_resource_tag.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/reg_resource_tag.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./regdb/reg_snapshot.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/reg_snapshot.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./regdb/reg_tag.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/reg_tag.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./regdb/sp_app.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/sp_app.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./regdb/sp_auth_step.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/sp_auth_step.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./regdb/sp_claim_mapping.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/sp_claim_mapping.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./regdb/sp_federated_idp.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/sp_federated_idp.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./regdb/sp_inbound_auth.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/sp_inbound_auth.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./regdb/sp_provisioning_connector.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/sp_provisioning_connector.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./regdb/sp_req_path_authenticator.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/sp_req_path_authenticator.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./regdb/sp_role_mapping.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/sp_role_mapping.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./regdb/um_account_mapping.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/um_account_mapping.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./regdb/um_claim.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/um_claim.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./regdb/um_dialect.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/um_dialect.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./regdb/um_domain.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/um_domain.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./regdb/um_hybrid_remember_me.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/um_hybrid_remember_me.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./regdb/um_hybrid_role.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/um_hybrid_role.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./regdb/um_hybrid_user_role.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/um_hybrid_user_role.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./regdb/um_module.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/um_module.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./regdb/um_module_actions.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/um_module_actions.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./regdb/um_permission.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/um_permission.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./regdb/um_profile_config.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/um_profile_config.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./regdb/um_role.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/um_role.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./regdb/um_role_permission.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/um_role_permission.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./regdb/um_shared_user_role.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/um_shared_user_role.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./regdb/um_system_role.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/um_system_role.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./regdb/um_system_user.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/um_system_user.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./regdb/um_system_user_role.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/um_system_user_role.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./regdb/um_tenant.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/um_tenant.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./regdb/um_tid.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/um_tid.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./regdb/um_user.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/um_user.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./regdb/um_user_attribute.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/um_user_attribute.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./regdb/um_user_permission.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/um_user_permission.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./regdb/um_user_role.ibd to /data/dbbak/12_full_2017-03-23_1042/regdb/um_user_role.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./restdb/config.ibd to /data/dbbak/12_full_2017-03-23_1042/restdb/config.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./restdb/user.ibd to /data/dbbak/12_full_2017-03-23_1042/restdb/user.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./waarp/configuration.ibd to /data/dbbak/12_full_2017-03-23_1042/waarp/configuration.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./waarp/hostconfig.ibd to /data/dbbak/12_full_2017-03-23_1042/waarp/hostconfig.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./waarp/hosts.ibd to /data/dbbak/12_full_2017-03-23_1042/waarp/hosts.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./waarp/multiplemonitor.ibd to /data/dbbak/12_full_2017-03-23_1042/waarp/multiplemonitor.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./waarp/rules.ibd to /data/dbbak/12_full_2017-03-23_1042/waarp/rules.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./waarp/rules_copy.ibd to /data/dbbak/12_full_2017-03-23_1042/waarp/rules_copy.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./waarp/rules_copy1.ibd to /data/dbbak/12_full_2017-03-23_1042/waarp/rules_copy1.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./waarp/runner.ibd to /data/dbbak/12_full_2017-03-23_1042/waarp/runner.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 [01] Copying ./waarp/sequences.ibd to /data/dbbak/12_full_2017-03-23_1042/waarp/sequences.ibd
+170323 10:42:23 [01]        ...done
+170323 10:42:23 >> log scanned up to (184749550)
+170323 10:42:24 Executing FLUSH NO_WRITE_TO_BINLOG TABLES...
+170323 10:42:24 Executing FLUSH TABLES WITH READ LOCK...
+170323 10:42:24 Starting to backup non-InnoDB tables and files
+170323 10:42:24 [01] Copying ./mysql/db.frm to /data/dbbak/12_full_2017-03-23_1042/mysql/db.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/db.MYI to /data/dbbak/12_full_2017-03-23_1042/mysql/db.MYI
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/db.MYD to /data/dbbak/12_full_2017-03-23_1042/mysql/db.MYD
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/user.frm to /data/dbbak/12_full_2017-03-23_1042/mysql/user.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/user.MYI to /data/dbbak/12_full_2017-03-23_1042/mysql/user.MYI
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/user.MYD to /data/dbbak/12_full_2017-03-23_1042/mysql/user.MYD
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/func.frm to /data/dbbak/12_full_2017-03-23_1042/mysql/func.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/func.MYI to /data/dbbak/12_full_2017-03-23_1042/mysql/func.MYI
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/func.MYD to /data/dbbak/12_full_2017-03-23_1042/mysql/func.MYD
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/plugin.frm to /data/dbbak/12_full_2017-03-23_1042/mysql/plugin.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/plugin.MYI to /data/dbbak/12_full_2017-03-23_1042/mysql/plugin.MYI
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/plugin.MYD to /data/dbbak/12_full_2017-03-23_1042/mysql/plugin.MYD
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/servers.frm to /data/dbbak/12_full_2017-03-23_1042/mysql/servers.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/servers.MYI to /data/dbbak/12_full_2017-03-23_1042/mysql/servers.MYI
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/servers.MYD to /data/dbbak/12_full_2017-03-23_1042/mysql/servers.MYD
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/tables_priv.frm to /data/dbbak/12_full_2017-03-23_1042/mysql/tables_priv.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/tables_priv.MYI to /data/dbbak/12_full_2017-03-23_1042/mysql/tables_priv.MYI
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/tables_priv.MYD to /data/dbbak/12_full_2017-03-23_1042/mysql/tables_priv.MYD
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/columns_priv.frm to /data/dbbak/12_full_2017-03-23_1042/mysql/columns_priv.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/columns_priv.MYI to /data/dbbak/12_full_2017-03-23_1042/mysql/columns_priv.MYI
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/columns_priv.MYD to /data/dbbak/12_full_2017-03-23_1042/mysql/columns_priv.MYD
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/help_topic.frm to /data/dbbak/12_full_2017-03-23_1042/mysql/help_topic.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/help_topic.MYI to /data/dbbak/12_full_2017-03-23_1042/mysql/help_topic.MYI
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/help_topic.MYD to /data/dbbak/12_full_2017-03-23_1042/mysql/help_topic.MYD
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/help_category.frm to /data/dbbak/12_full_2017-03-23_1042/mysql/help_category.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/help_category.MYI to /data/dbbak/12_full_2017-03-23_1042/mysql/help_category.MYI
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/help_category.MYD to /data/dbbak/12_full_2017-03-23_1042/mysql/help_category.MYD
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/help_relation.frm to /data/dbbak/12_full_2017-03-23_1042/mysql/help_relation.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/help_relation.MYI to /data/dbbak/12_full_2017-03-23_1042/mysql/help_relation.MYI
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/help_relation.MYD to /data/dbbak/12_full_2017-03-23_1042/mysql/help_relation.MYD
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/help_keyword.frm to /data/dbbak/12_full_2017-03-23_1042/mysql/help_keyword.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/help_keyword.MYI to /data/dbbak/12_full_2017-03-23_1042/mysql/help_keyword.MYI
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/help_keyword.MYD to /data/dbbak/12_full_2017-03-23_1042/mysql/help_keyword.MYD
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/time_zone_name.frm to /data/dbbak/12_full_2017-03-23_1042/mysql/time_zone_name.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/time_zone_name.MYI to /data/dbbak/12_full_2017-03-23_1042/mysql/time_zone_name.MYI
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/time_zone_name.MYD to /data/dbbak/12_full_2017-03-23_1042/mysql/time_zone_name.MYD
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/time_zone.frm to /data/dbbak/12_full_2017-03-23_1042/mysql/time_zone.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/time_zone.MYI to /data/dbbak/12_full_2017-03-23_1042/mysql/time_zone.MYI
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/time_zone.MYD to /data/dbbak/12_full_2017-03-23_1042/mysql/time_zone.MYD
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/time_zone_transition.frm to /data/dbbak/12_full_2017-03-23_1042/mysql/time_zone_transition.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/time_zone_transition.MYI to /data/dbbak/12_full_2017-03-23_1042/mysql/time_zone_transition.MYI
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/time_zone_transition.MYD to /data/dbbak/12_full_2017-03-23_1042/mysql/time_zone_transition.MYD
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/time_zone_transition_type.frm to /data/dbbak/12_full_2017-03-23_1042/mysql/time_zone_transition_type.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/time_zone_transition_type.MYI to /data/dbbak/12_full_2017-03-23_1042/mysql/time_zone_transition_type.MYI
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/time_zone_transition_type.MYD to /data/dbbak/12_full_2017-03-23_1042/mysql/time_zone_transition_type.MYD
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/time_zone_leap_second.frm to /data/dbbak/12_full_2017-03-23_1042/mysql/time_zone_leap_second.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/time_zone_leap_second.MYI to /data/dbbak/12_full_2017-03-23_1042/mysql/time_zone_leap_second.MYI
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/time_zone_leap_second.MYD to /data/dbbak/12_full_2017-03-23_1042/mysql/time_zone_leap_second.MYD
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/proc.frm to /data/dbbak/12_full_2017-03-23_1042/mysql/proc.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/proc.MYI to /data/dbbak/12_full_2017-03-23_1042/mysql/proc.MYI
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/proc.MYD to /data/dbbak/12_full_2017-03-23_1042/mysql/proc.MYD
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/procs_priv.frm to /data/dbbak/12_full_2017-03-23_1042/mysql/procs_priv.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/procs_priv.MYI to /data/dbbak/12_full_2017-03-23_1042/mysql/procs_priv.MYI
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/procs_priv.MYD to /data/dbbak/12_full_2017-03-23_1042/mysql/procs_priv.MYD
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/general_log.frm to /data/dbbak/12_full_2017-03-23_1042/mysql/general_log.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/general_log.CSM to /data/dbbak/12_full_2017-03-23_1042/mysql/general_log.CSM
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/general_log.CSV to /data/dbbak/12_full_2017-03-23_1042/mysql/general_log.CSV
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/slow_log.frm to /data/dbbak/12_full_2017-03-23_1042/mysql/slow_log.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/slow_log.CSM to /data/dbbak/12_full_2017-03-23_1042/mysql/slow_log.CSM
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/slow_log.CSV to /data/dbbak/12_full_2017-03-23_1042/mysql/slow_log.CSV
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/event.frm to /data/dbbak/12_full_2017-03-23_1042/mysql/event.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/event.MYI to /data/dbbak/12_full_2017-03-23_1042/mysql/event.MYI
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/event.MYD to /data/dbbak/12_full_2017-03-23_1042/mysql/event.MYD
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/ndb_binlog_index.frm to /data/dbbak/12_full_2017-03-23_1042/mysql/ndb_binlog_index.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/ndb_binlog_index.MYI to /data/dbbak/12_full_2017-03-23_1042/mysql/ndb_binlog_index.MYI
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/ndb_binlog_index.MYD to /data/dbbak/12_full_2017-03-23_1042/mysql/ndb_binlog_index.MYD
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/innodb_table_stats.frm to /data/dbbak/12_full_2017-03-23_1042/mysql/innodb_table_stats.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/innodb_index_stats.frm to /data/dbbak/12_full_2017-03-23_1042/mysql/innodb_index_stats.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/slave_relay_log_info.frm to /data/dbbak/12_full_2017-03-23_1042/mysql/slave_relay_log_info.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/slave_master_info.frm to /data/dbbak/12_full_2017-03-23_1042/mysql/slave_master_info.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/slave_worker_info.frm to /data/dbbak/12_full_2017-03-23_1042/mysql/slave_worker_info.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/proxies_priv.frm to /data/dbbak/12_full_2017-03-23_1042/mysql/proxies_priv.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/proxies_priv.MYI to /data/dbbak/12_full_2017-03-23_1042/mysql/proxies_priv.MYI
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./mysql/proxies_priv.MYD to /data/dbbak/12_full_2017-03-23_1042/mysql/proxies_priv.MYD
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [00] Writing test/db.opt
+170323 10:42:24 [00]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/db.opt to /data/dbbak/12_full_2017-03-23_1042/performance_schema/db.opt
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/cond_instances.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/cond_instances.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/events_waits_current.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/events_waits_current.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/events_waits_history.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/events_waits_history.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/events_waits_history_long.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/events_waits_history_long.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/events_waits_summary_by_instance.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/events_waits_summary_by_instance.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/events_waits_summary_by_host_by_event_name.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/events_waits_summary_by_host_by_event_name.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/events_waits_summary_by_user_by_event_name.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/events_waits_summary_by_user_by_event_name.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/events_waits_summary_by_account_by_event_name.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/events_waits_summary_by_account_by_event_name.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/events_waits_summary_by_thread_by_event_name.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/events_waits_summary_by_thread_by_event_name.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/events_waits_summary_global_by_event_name.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/events_waits_summary_global_by_event_name.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/file_instances.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/file_instances.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/file_summary_by_event_name.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/file_summary_by_event_name.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/file_summary_by_instance.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/file_summary_by_instance.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/socket_instances.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/socket_instances.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/socket_summary_by_instance.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/socket_summary_by_instance.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/socket_summary_by_event_name.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/socket_summary_by_event_name.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/host_cache.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/host_cache.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/mutex_instances.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/mutex_instances.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/objects_summary_global_by_type.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/objects_summary_global_by_type.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/performance_timers.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/performance_timers.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/rwlock_instances.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/rwlock_instances.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/setup_actors.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/setup_actors.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/setup_consumers.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/setup_consumers.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/setup_instruments.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/setup_instruments.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/setup_objects.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/setup_objects.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/setup_timers.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/setup_timers.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/table_io_waits_summary_by_index_usage.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/table_io_waits_summary_by_index_usage.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/table_io_waits_summary_by_table.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/table_io_waits_summary_by_table.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/table_lock_waits_summary_by_table.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/table_lock_waits_summary_by_table.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/threads.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/threads.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/events_stages_current.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/events_stages_current.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/events_stages_history.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/events_stages_history.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/events_stages_history_long.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/events_stages_history_long.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/events_stages_summary_by_thread_by_event_name.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/events_stages_summary_by_thread_by_event_name.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/events_stages_summary_by_host_by_event_name.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/events_stages_summary_by_host_by_event_name.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/events_stages_summary_by_user_by_event_name.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/events_stages_summary_by_user_by_event_name.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/events_stages_summary_by_account_by_event_name.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/events_stages_summary_by_account_by_event_name.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/events_stages_summary_global_by_event_name.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/events_stages_summary_global_by_event_name.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/events_statements_current.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/events_statements_current.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/events_statements_history.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/events_statements_history.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/events_statements_history_long.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/events_statements_history_long.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/events_statements_summary_by_thread_by_event_name.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/events_statements_summary_by_thread_by_event_name.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/events_statements_summary_by_host_by_event_name.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/events_statements_summary_by_host_by_event_name.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/events_statements_summary_by_user_by_event_name.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/events_statements_summary_by_user_by_event_name.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/events_statements_summary_by_account_by_event_name.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/events_statements_summary_by_account_by_event_name.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/events_statements_summary_global_by_event_name.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/events_statements_summary_global_by_event_name.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/hosts.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/hosts.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/users.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/users.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/accounts.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/accounts.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/events_statements_summary_by_digest.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/events_statements_summary_by_digest.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/session_connect_attrs.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/session_connect_attrs.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./performance_schema/session_account_connect_attrs.frm to /data/dbbak/12_full_2017-03-23_1042/performance_schema/session_account_connect_attrs.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./appstoredb/db.opt to /data/dbbak/12_full_2017-03-23_1042/appstoredb/db.opt
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./appstoredb/operationportal_v1@002e0@002e0@0026appbasicinfo_v1@002e0@002e0.frm to /data/dbbak/12_full_2017-03-23_1042/appstoredb/operationportal_v1@002e0@002e0@0026appbasicinfo_v1@002e0@002e0.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./appstoredb/operationportal_v1@002e0@002e0@0026appconfig_v1@002e0@002e0.frm to /data/dbbak/12_full_2017-03-23_1042/appstoredb/operationportal_v1@002e0@002e0@0026appconfig_v1@002e0@002e0.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./appstoredb/operationportal_v1@002e0@002e0@0026appextendedinfo_v1@002e0@002e0.frm to /data/dbbak/12_full_2017-03-23_1042/appstoredb/operationportal_v1@002e0@002e0@0026appextendedinfo_v1@002e0@002e0.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/db.opt to /data/dbbak/12_full_2017-03-23_1042/bamdb/db.opt
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/api_destination_summary.frm to /data/dbbak/12_full_2017-03-23_1042/bamdb/api_destination_summary.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/api_destination_summary.MYI to /data/dbbak/12_full_2017-03-23_1042/bamdb/api_destination_summary.MYI
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/api_destination_summary.MYD to /data/dbbak/12_full_2017-03-23_1042/bamdb/api_destination_summary.MYD
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/api_fault_summary.frm to /data/dbbak/12_full_2017-03-23_1042/bamdb/api_fault_summary.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/api_fault_summary.MYI to /data/dbbak/12_full_2017-03-23_1042/bamdb/api_fault_summary.MYI
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/api_fault_summary.MYD to /data/dbbak/12_full_2017-03-23_1042/bamdb/api_fault_summary.MYD
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/api_request_summary.frm to /data/dbbak/12_full_2017-03-23_1042/bamdb/api_request_summary.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/api_request_summary.MYI to /data/dbbak/12_full_2017-03-23_1042/bamdb/api_request_summary.MYI
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/api_request_summary.MYD to /data/dbbak/12_full_2017-03-23_1042/bamdb/api_request_summary.MYD
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/api_resource_usage_summary.frm to /data/dbbak/12_full_2017-03-23_1042/bamdb/api_resource_usage_summary.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/api_resource_usage_summary.MYI to /data/dbbak/12_full_2017-03-23_1042/bamdb/api_resource_usage_summary.MYI
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/api_resource_usage_summary.MYD to /data/dbbak/12_full_2017-03-23_1042/bamdb/api_resource_usage_summary.MYD
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/api_response_summary.frm to /data/dbbak/12_full_2017-03-23_1042/bamdb/api_response_summary.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/api_response_summary.MYI to /data/dbbak/12_full_2017-03-23_1042/bamdb/api_response_summary.MYI
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/api_response_summary.MYD to /data/dbbak/12_full_2017-03-23_1042/bamdb/api_response_summary.MYD
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/api_version_usage_summary.frm to /data/dbbak/12_full_2017-03-23_1042/bamdb/api_version_usage_summary.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/api_version_usage_summary.MYI to /data/dbbak/12_full_2017-03-23_1042/bamdb/api_version_usage_summary.MYI
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/api_version_usage_summary.MYD to /data/dbbak/12_full_2017-03-23_1042/bamdb/api_version_usage_summary.MYD
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/reg_association.frm to /data/dbbak/12_full_2017-03-23_1042/bamdb/reg_association.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/reg_cluster_lock.frm to /data/dbbak/12_full_2017-03-23_1042/bamdb/reg_cluster_lock.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/reg_comment.frm to /data/dbbak/12_full_2017-03-23_1042/bamdb/reg_comment.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/reg_content.frm to /data/dbbak/12_full_2017-03-23_1042/bamdb/reg_content.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/reg_content_history.frm to /data/dbbak/12_full_2017-03-23_1042/bamdb/reg_content_history.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/reg_log.frm to /data/dbbak/12_full_2017-03-23_1042/bamdb/reg_log.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/reg_path.frm to /data/dbbak/12_full_2017-03-23_1042/bamdb/reg_path.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/reg_property.frm to /data/dbbak/12_full_2017-03-23_1042/bamdb/reg_property.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/reg_rating.frm to /data/dbbak/12_full_2017-03-23_1042/bamdb/reg_rating.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/reg_resource.frm to /data/dbbak/12_full_2017-03-23_1042/bamdb/reg_resource.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/reg_resource_comment.frm to /data/dbbak/12_full_2017-03-23_1042/bamdb/reg_resource_comment.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/reg_resource_history.frm to /data/dbbak/12_full_2017-03-23_1042/bamdb/reg_resource_history.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/reg_resource_property.frm to /data/dbbak/12_full_2017-03-23_1042/bamdb/reg_resource_property.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/reg_resource_rating.frm to /data/dbbak/12_full_2017-03-23_1042/bamdb/reg_resource_rating.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/reg_resource_tag.frm to /data/dbbak/12_full_2017-03-23_1042/bamdb/reg_resource_tag.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/reg_snapshot.frm to /data/dbbak/12_full_2017-03-23_1042/bamdb/reg_snapshot.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/reg_tag.frm to /data/dbbak/12_full_2017-03-23_1042/bamdb/reg_tag.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/um_claim.frm to /data/dbbak/12_full_2017-03-23_1042/bamdb/um_claim.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/um_claim_behavior.frm to /data/dbbak/12_full_2017-03-23_1042/bamdb/um_claim_behavior.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/um_dialect.frm to /data/dbbak/12_full_2017-03-23_1042/bamdb/um_dialect.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/um_hybrid_remember_me.frm to /data/dbbak/12_full_2017-03-23_1042/bamdb/um_hybrid_remember_me.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/um_hybrid_role.frm to /data/dbbak/12_full_2017-03-23_1042/bamdb/um_hybrid_role.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/um_hybrid_user_role.frm to /data/dbbak/12_full_2017-03-23_1042/bamdb/um_hybrid_user_role.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/um_permission.frm to /data/dbbak/12_full_2017-03-23_1042/bamdb/um_permission.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/um_profile_config.frm to /data/dbbak/12_full_2017-03-23_1042/bamdb/um_profile_config.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/um_role.frm to /data/dbbak/12_full_2017-03-23_1042/bamdb/um_role.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/um_role_permission.frm to /data/dbbak/12_full_2017-03-23_1042/bamdb/um_role_permission.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/um_tenant.frm to /data/dbbak/12_full_2017-03-23_1042/bamdb/um_tenant.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/um_user.frm to /data/dbbak/12_full_2017-03-23_1042/bamdb/um_user.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/um_user_attribute.frm to /data/dbbak/12_full_2017-03-23_1042/bamdb/um_user_attribute.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/um_user_permission.frm to /data/dbbak/12_full_2017-03-23_1042/bamdb/um_user_permission.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./bamdb/um_user_role.frm to /data/dbbak/12_full_2017-03-23_1042/bamdb/um_user_role.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./omrest/db.opt to /data/dbbak/12_full_2017-03-23_1042/omrest/db.opt
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./omrest/adapterstatus.frm to /data/dbbak/12_full_2017-03-23_1042/omrest/adapterstatus.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./omrest/event.frm to /data/dbbak/12_full_2017-03-23_1042/omrest/event.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./omrest/events.frm to /data/dbbak/12_full_2017-03-23_1042/omrest/events.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./omrest/grouproles.frm to /data/dbbak/12_full_2017-03-23_1042/omrest/grouproles.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./omrest/logtags.frm to /data/dbbak/12_full_2017-03-23_1042/omrest/logtags.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./omrest/pluginstatus.frm to /data/dbbak/12_full_2017-03-23_1042/omrest/pluginstatus.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./omrest/resource_version.frm to /data/dbbak/12_full_2017-03-23_1042/omrest/resource_version.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./omrest/trackrecords.frm to /data/dbbak/12_full_2017-03-23_1042/omrest/trackrecords.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./omrest/um_grant.frm to /data/dbbak/12_full_2017-03-23_1042/omrest/um_grant.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./omrest/um_group_permission.frm to /data/dbbak/12_full_2017-03-23_1042/omrest/um_group_permission.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./omrest/um_permission.frm to /data/dbbak/12_full_2017-03-23_1042/omrest/um_permission.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./omrest/um_role.frm to /data/dbbak/12_full_2017-03-23_1042/omrest/um_role.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./omrest/um_role_permission.frm to /data/dbbak/12_full_2017-03-23_1042/omrest/um_role_permission.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./omrest/um_user.frm to /data/dbbak/12_full_2017-03-23_1042/omrest/um_user.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./omrest/um_usergroup.frm to /data/dbbak/12_full_2017-03-23_1042/omrest/um_usergroup.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./omrest/urlusetable.frm to /data/dbbak/12_full_2017-03-23_1042/omrest/urlusetable.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./omrest/usergroups.frm to /data/dbbak/12_full_2017-03-23_1042/omrest/usergroups.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./omrest/users.frm to /data/dbbak/12_full_2017-03-23_1042/omrest/users.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./operation@002dbackend/db.opt to /data/dbbak/12_full_2017-03-23_1042/operation@002dbackend/db.opt
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./operation@002dbackend/trackrecords.frm to /data/dbbak/12_full_2017-03-23_1042/operation@002dbackend/trackrecords.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./operation@002dbackend/urlusetable.frm to /data/dbbak/12_full_2017-03-23_1042/operation@002dbackend/urlusetable.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./operation@002duser/db.opt to /data/dbbak/12_full_2017-03-23_1042/operation@002duser/db.opt
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./operation@002duser/um_grant.frm to /data/dbbak/12_full_2017-03-23_1042/operation@002duser/um_grant.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./operation@002duser/um_group_permission.frm to /data/dbbak/12_full_2017-03-23_1042/operation@002duser/um_group_permission.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./operation@002duser/um_permission.frm to /data/dbbak/12_full_2017-03-23_1042/operation@002duser/um_permission.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./operation@002duser/um_role.frm to /data/dbbak/12_full_2017-03-23_1042/operation@002duser/um_role.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./operation@002duser/um_role_permission.frm to /data/dbbak/12_full_2017-03-23_1042/operation@002duser/um_role_permission.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./operation@002duser/um_user.frm to /data/dbbak/12_full_2017-03-23_1042/operation@002duser/um_user.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./operation@002duser/um_usergroup.frm to /data/dbbak/12_full_2017-03-23_1042/operation@002duser/um_usergroup.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./pds/db.opt to /data/dbbak/12_full_2017-03-23_1042/pds/db.opt
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./pds/appentfytest5_v1@002e0@002e0@0026fytest201610311433_v1@002e0@002e0.frm to /data/dbbak/12_full_2017-03-23_1042/pds/appentfytest5_v1@002e0@002e0@0026fytest201610311433_v1@002e0@002e0.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./pds/appentfytest6_v1@002e0@002e0@0026resumemodelmongodbfzt0001_v1@002e0@002e0.frm to /data/dbbak/12_full_2017-03-23_1042/pds/appentfytest6_v1@002e0@002e0@0026resumemodelmongodbfzt0001_v1@002e0@002e0.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./pds/appentfytest6_v1@002e0@002e0@0026resumemodelmongodbtzt0001_v1@002e0@002e0.frm to /data/dbbak/12_full_2017-03-23_1042/pds/appentfytest6_v1@002e0@002e0@0026resumemodelmongodbtzt0001_v1@002e0@002e0.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./pds/appentfytest6_v1@002e0@002e0@0026resumemodelmysqlfzt0001_v1@002e0@002e0.frm to /data/dbbak/12_full_2017-03-23_1042/pds/appentfytest6_v1@002e0@002e0@0026resumemodelmysqlfzt0001_v1@002e0@002e0.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./pds/appentfytest6_v1@002e0@002e0@0026resumemodelmysqltzt0001_v1@002e0@002e0.frm to /data/dbbak/12_full_2017-03-23_1042/pds/appentfytest6_v1@002e0@002e0@0026resumemodelmysqltzt0001_v1@002e0@002e0.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./pds/asexamine_v1@002e0@002e0@0026asexaminetabletemp_v1@002e0@002e0.frm to /data/dbbak/12_full_2017-03-23_1042/pds/asexamine_v1@002e0@002e0@0026asexaminetabletemp_v1@002e0@002e0.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./pds/asexamine_v1@002e0@002e0@0026cbusincomes_v1@002e0@002e0.frm to /data/dbbak/12_full_2017-03-23_1042/pds/asexamine_v1@002e0@002e0@0026cbusincomes_v1@002e0@002e0.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./pds/asexamine_v1@002e0@002e0@0026cexaminecominfo_v1@002e0@002e0.frm to /data/dbbak/12_full_2017-03-23_1042/pds/asexamine_v1@002e0@002e0@0026cexaminecominfo_v1@002e0@002e0.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./pds/asexamine_v1@002e0@002e0@0026cexamineempinfo_v1@002e0@002e0.frm to /data/dbbak/12_full_2017-03-23_1042/pds/asexamine_v1@002e0@002e0@0026cexamineempinfo_v1@002e0@002e0.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./pds/asexamine_v1@002e0@002e0@0026cexaminemain_v1@002e0@002e0.frm to /data/dbbak/12_full_2017-03-23_1042/pds/asexamine_v1@002e0@002e0@0026cexaminemain_v1@002e0@002e0.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./pds/asexamine_v1@002e0@002e0@0026cexamineproinc_v1@002e0@002e0.frm to /data/dbbak/12_full_2017-03-23_1042/pds/asexamine_v1@002e0@002e0@0026cexamineproinc_v1@002e0@002e0.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./pds/asexamine_v1@002e0@002e0@0026cexaminetaxinfo_v1@002e0@002e0.frm to /data/dbbak/12_full_2017-03-23_1042/pds/asexamine_v1@002e0@002e0@0026cexaminetaxinfo_v1@002e0@002e0.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./pds/asexamine_v1@002e0@002e0@0026cinnincomes_v1@002e0@002e0.frm to /data/dbbak/12_full_2017-03-23_1042/pds/asexamine_v1@002e0@002e0@0026cinnincomes_v1@002e0@002e0.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./pds/asexamine_v1@002e0@002e0@0026cinnprojects_v1@002e0@002e0.frm to /data/dbbak/12_full_2017-03-23_1042/pds/asexamine_v1@002e0@002e0@0026cinnprojects_v1@002e0@002e0.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./pds/asexamine_v1@002e0@002e0@0026cresearchfiles_v1@002e0@002e0.frm to /data/dbbak/12_full_2017-03-23_1042/pds/asexamine_v1@002e0@002e0@0026cresearchfiles_v1@002e0@002e0.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./pds/enterprisenoticemgtapp_v1@002e0@002e0@0026notification3_v1@002e0@002e0.frm to /data/dbbak/12_full_2017-03-23_1042/pds/enterprisenoticemgtapp_v1@002e0@002e0@0026notification3_v1@002e0@002e0.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./pds/enterpriseusermgtapp_v1@002e0@002e0@0026appnoticeconf_v1@002e0@002e1.frm to /data/dbbak/12_full_2017-03-23_1042/pds/enterpriseusermgtapp_v1@002e0@002e0@0026appnoticeconf_v1@002e0@002e1.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./pds/enterpriseusermgtapp_v1@002e0@002e0@0026noticeconfiguration_v1@002e0@002e2.frm to /data/dbbak/12_full_2017-03-23_1042/pds/enterpriseusermgtapp_v1@002e0@002e0@0026noticeconfiguration_v1@002e0@002e2.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./pds/enterpriseusermgtapp_v1@002e0@002e0@0026orguser_v1@002e0@002e0.frm to /data/dbbak/12_full_2017-03-23_1042/pds/enterpriseusermgtapp_v1@002e0@002e0@0026orguser_v1@002e0@002e0.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./pds/eservicemysqltest_v1@002e0@002e0@0026tenantfalsetest1_v1@002e0@002e0.frm to /data/dbbak/12_full_2017-03-23_1042/pds/eservicemysqltest_v1@002e0@002e0@0026tenantfalsetest1_v1@002e0@002e0.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./pds/eservicemysqltest_v1@002e0@002e0@0026tenantfalsetest5_v1@002e0@002e0.frm to /data/dbbak/12_full_2017-03-23_1042/pds/eservicemysqltest_v1@002e0@002e0@0026tenantfalsetest5_v1@002e0@002e0.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./pds/eservicemysqltest_v1@002e0@002e0@0026tenanttruetest1_v1@002e0@002e0.frm to /data/dbbak/12_full_2017-03-23_1042/pds/eservicemysqltest_v1@002e0@002e0@0026tenanttruetest1_v1@002e0@002e0.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./pds/geinfomationechange_v1@002e0@002e0@0026commessagetenant_v1@002e0@002e0.frm to /data/dbbak/12_full_2017-03-23_1042/pds/geinfomationechange_v1@002e0@002e0@0026commessagetenant_v1@002e0@002e0.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./pds/geinfomationechange_v1@002e0@002e0@0026depinfo_v1@002e0@002e0.frm to /data/dbbak/12_full_2017-03-23_1042/pds/geinfomationechange_v1@002e0@002e0@0026depinfo_v1@002e0@002e0.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./pds/geinfomationechange_v1@002e0@002e0@0026mmessageshow_v1@002e0@002e0.frm to /data/dbbak/12_full_2017-03-23_1042/pds/geinfomationechange_v1@002e0@002e0@0026mmessageshow_v1@002e0@002e0.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./pds/tongwlgzt_v1@002e0@002e0@0026addstudent03p1_v1@002e0@002e0.frm to /data/dbbak/12_full_2017-03-23_1042/pds/tongwlgzt_v1@002e0@002e0@0026addstudent03p1_v1@002e0@002e0.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 >> log scanned up to (184749550)
+170323 10:42:24 [01] Copying ./pds/tongwlgzt_v1@002e0@002e0@0026jl_v1@002e0@002e0.frm to /data/dbbak/12_full_2017-03-23_1042/pds/tongwlgzt_v1@002e0@002e0@0026jl_v1@002e0@002e0.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./pds/tongwlgzt_v1@002e0@002e0@0026jsontest_v1@002e0@002e0.frm to /data/dbbak/12_full_2017-03-23_1042/pds/tongwlgzt_v1@002e0@002e0@0026jsontest_v1@002e0@002e0.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./pds/tongwlgzt_v1@002e0@002e0@0026uniqueindex_v1@002e0@002e0.frm to /data/dbbak/12_full_2017-03-23_1042/pds/tongwlgzt_v1@002e0@002e0@0026uniqueindex_v1@002e0@002e0.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./pds/tongwlgzt_v1@002e0@002e8@0026tiszyfw017test1_v1@002e0@002e0.frm to /data/dbbak/12_full_2017-03-23_1042/pds/tongwlgzt_v1@002e0@002e8@0026tiszyfw017test1_v1@002e0@002e0.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/db.opt to /data/dbbak/12_full_2017-03-23_1042/regdb/db.opt
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/am_api.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/am_api.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/am_api_comments.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/am_api_comments.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/am_api_default_version.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/am_api_default_version.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/am_api_lc_event.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/am_api_lc_event.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/am_api_ratings.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/am_api_ratings.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/am_api_scopes.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/am_api_scopes.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/am_api_url_mapping.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/am_api_url_mapping.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/am_app_key_domain_mapping.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/am_app_key_domain_mapping.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/am_application.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/am_application.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/am_application_key_mapping.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/am_application_key_mapping.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/am_application_registration.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/am_application_registration.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/am_external_stores.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/am_external_stores.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/am_subscriber.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/am_subscriber.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/am_subscription.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/am_subscription.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/am_subscription_key_mapping.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/am_subscription_key_mapping.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/am_tier_permissions.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/am_tier_permissions.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/am_workflows.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/am_workflows.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/idn_associated_id.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/idn_associated_id.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/idn_base_table.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/idn_base_table.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/idn_identity_meta_data.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/idn_identity_meta_data.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/idn_identity_user_data.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/idn_identity_user_data.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/idn_oauth1a_access_token.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/idn_oauth1a_access_token.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/idn_oauth1a_request_token.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/idn_oauth1a_request_token.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/idn_oauth2_access_token.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/idn_oauth2_access_token.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/idn_oauth2_authorization_code.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/idn_oauth2_authorization_code.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/idn_oauth2_resource_scope.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/idn_oauth2_resource_scope.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/idn_oauth2_scope.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/idn_oauth2_scope.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/idn_oauth_consumer_apps.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/idn_oauth_consumer_apps.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/idn_openid_associations.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/idn_openid_associations.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/idn_openid_remember_me.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/idn_openid_remember_me.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/idn_openid_user_rps.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/idn_openid_user_rps.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/idn_scim_group.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/idn_scim_group.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/idn_scim_provider.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/idn_scim_provider.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/idn_sts_store.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/idn_sts_store.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/idn_thrift_session.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/idn_thrift_session.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/idp.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/idp.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/idp_authenticator.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/idp_authenticator.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/idp_authenticator_property.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/idp_authenticator_property.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/idp_claim.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/idp_claim.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/idp_claim_mapping.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/idp_claim_mapping.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/idp_local_claim.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/idp_local_claim.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/idp_prov_config_property.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/idp_prov_config_property.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/idp_provisioning_config.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/idp_provisioning_config.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/idp_provisioning_entity.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/idp_provisioning_entity.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/idp_role.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/idp_role.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/idp_role_mapping.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/idp_role_mapping.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/reg_association.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/reg_association.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/reg_cluster_lock.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/reg_cluster_lock.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/reg_comment.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/reg_comment.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/reg_content.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/reg_content.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/reg_content_history.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/reg_content_history.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/reg_log.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/reg_log.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/reg_path.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/reg_path.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/reg_property.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/reg_property.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/reg_rating.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/reg_rating.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/reg_resource.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/reg_resource.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/reg_resource_comment.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/reg_resource_comment.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/reg_resource_history.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/reg_resource_history.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/reg_resource_property.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/reg_resource_property.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/reg_resource_rating.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/reg_resource_rating.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/reg_resource_tag.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/reg_resource_tag.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/reg_snapshot.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/reg_snapshot.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/reg_tag.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/reg_tag.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/sp_app.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/sp_app.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/sp_auth_step.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/sp_auth_step.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/sp_claim_mapping.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/sp_claim_mapping.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/sp_federated_idp.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/sp_federated_idp.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/sp_inbound_auth.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/sp_inbound_auth.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/sp_provisioning_connector.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/sp_provisioning_connector.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/sp_req_path_authenticator.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/sp_req_path_authenticator.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/sp_role_mapping.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/sp_role_mapping.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/um_account_mapping.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/um_account_mapping.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/um_claim.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/um_claim.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/um_dialect.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/um_dialect.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/um_domain.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/um_domain.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/um_hybrid_remember_me.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/um_hybrid_remember_me.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/um_hybrid_role.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/um_hybrid_role.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/um_hybrid_user_role.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/um_hybrid_user_role.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/um_module.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/um_module.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/um_module_actions.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/um_module_actions.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/um_permission.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/um_permission.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/um_profile_config.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/um_profile_config.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/um_role.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/um_role.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/um_role_permission.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/um_role_permission.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/um_shared_user_role.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/um_shared_user_role.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/um_system_role.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/um_system_role.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/um_system_user.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/um_system_user.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/um_system_user_role.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/um_system_user_role.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/um_tenant.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/um_tenant.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/um_tid.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/um_tid.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/um_user.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/um_user.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/um_user_attribute.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/um_user_attribute.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/um_user_permission.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/um_user_permission.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./regdb/um_user_role.frm to /data/dbbak/12_full_2017-03-23_1042/regdb/um_user_role.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./restdb/db.opt to /data/dbbak/12_full_2017-03-23_1042/restdb/db.opt
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./restdb/config.frm to /data/dbbak/12_full_2017-03-23_1042/restdb/config.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./restdb/user.frm to /data/dbbak/12_full_2017-03-23_1042/restdb/user.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./waarp/db.opt to /data/dbbak/12_full_2017-03-23_1042/waarp/db.opt
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./waarp/configuration.frm to /data/dbbak/12_full_2017-03-23_1042/waarp/configuration.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./waarp/hostconfig.frm to /data/dbbak/12_full_2017-03-23_1042/waarp/hostconfig.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./waarp/hosts.frm to /data/dbbak/12_full_2017-03-23_1042/waarp/hosts.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./waarp/multiplemonitor.frm to /data/dbbak/12_full_2017-03-23_1042/waarp/multiplemonitor.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./waarp/rules.frm to /data/dbbak/12_full_2017-03-23_1042/waarp/rules.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./waarp/rules_copy.frm to /data/dbbak/12_full_2017-03-23_1042/waarp/rules_copy.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./waarp/rules_copy1.frm to /data/dbbak/12_full_2017-03-23_1042/waarp/rules_copy1.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./waarp/runner.frm to /data/dbbak/12_full_2017-03-23_1042/waarp/runner.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 [01] Copying ./waarp/sequences.frm to /data/dbbak/12_full_2017-03-23_1042/waarp/sequences.frm
+170323 10:42:24 [01]        ...done
+170323 10:42:24 Finished backing up non-InnoDB tables and files
+170323 10:42:24 [00] Writing xtrabackup_binlog_info
+170323 10:42:24 [00]        ...done
+170323 10:42:24 Executing FLUSH NO_WRITE_TO_BINLOG ENGINE LOGS...
+xtrabackup: The latest check point (for incremental): '184749550'
+xtrabackup: Stopping log copying thread.
+.170323 10:42:24 >> log scanned up to (184749550)
+
+170323 10:42:25 Executing UNLOCK TABLES
+170323 10:42:25 All tables unlocked
+170323 10:42:25 Backup created in directory '/data/dbbak/12_full_2017-03-23_1042/'
+MySQL binlog position: filename 'mysql-bin.000002', position '247101343', GTID of the last change '71c1b3ec-0eaa-11e7-b7d2-005056ae0434:1-6846'
+170323 10:42:25 [00] Writing backup-my.cnf
+170323 10:42:25 [00]        ...done
+170323 10:42:25 [00] Writing xtrabackup_info
+170323 10:42:25 [00]        ...done
+xtrabackup: Transaction log of lsn (184746748) to (184749550) was copied.
+170323 10:42:25 completed OK!
+

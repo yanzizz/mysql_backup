@@ -1,0 +1,31 @@
+[db]
+dbhost = 127.0.0.1
+dbport = 3306
+dbuser = regadmin
+dbpasswd = regadmin
+dbsock = /var/lib/mysql/mysql.sock
+mycnf = /etc/my.cnf
+
+[backup]
+#备份数据存放目录(--！！请注意bakdatadir所在分区的空间是否足够！！！！----)
+bakdatadir = /data/dbbak/
+#设定数据的保留周期，一个周期为7天
+keepcycles = 2
+
+[restore]
+#库存放目录 -- ！！！恢复时脚本会自动清除本目录，请确保目录下只有数据文件 ！！！
+resdatadir = /data/mysql/data
+
+[rsync]
+#程序主目录
+apphome = /opt/mysql_backup
+#远程备份主机
+remotehost = 172.23.17.32
+#本地数据目录
+localdir = /data/dbbak/
+#远程数据目录
+remotedir = /data/qyt-bak
+#本地BINLOG目录
+localbinlog = /var/lib/mysql/mysql-bin*
+#远程BINLOG目录
+remotebinlog = /data/binlogbak/qyt

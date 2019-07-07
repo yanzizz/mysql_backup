@@ -1,0 +1,64 @@
+1.配置percona源
+创建文件/etc/yum.repos.d/Percona.repo内容如下: 
+[percona]
+name = CentOS $releasever - Percona
+baseurl=https://mirrors.tuna.tsinghua.edu.cn/percona/yum/release/$releasever/os/$basearch/
+enabled = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-percona
+gpgcheck = 1
+
+2.配置与远程备份主机的免密码登录。
+# ssh-copy-id -i ~/.ssh/id_rsa.pub remote_user@remote_ip
+
+3.安装依赖
+# wget https://mirrors.tuna.tsinghua.edu.cn/percona/yum/RPM-GPG-KEY-Percona -O /etc/pki/rpm-gpg/RPM-GPG-KEY-percona
+# yum install -y perl-Digest-MD5 percona-xtrabackup
+
+注意在远程机器上也需要安装rsync,不然同步时会报错：
+bash: rsync: 未找到命令
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+
+# ssh remote_user@remote_ip yum install -y rsync
+
+4.部署备份系统
+软件部署在/opt下，直接解包即可。
+# tar -xzvf mybackup.tar.gz -C /top
+
+5.备份系统配置
+etc/config，配置如下：
+[db]
+dbhost = 127.0.0.1
+dbport = 3306
+dbuser = root
+dbpasswd = 123@abcd
+dbsock = /tmp/mysql.sock
+mycnf = /etc/my.cnf.d/server.cnf
+
+[backup]
+#备份数据存放目录
+bakdatadir = /data/dbbak/
+#设定数据的保留周期，一个周期为7天
+keepcycles = 2
+
+[restore]
+#库存放目录 -- ！！！恢复时脚本会自动清除本目录，请确保目录下只有数据文件 ！！！
+resdatadir = /data/db/mysql/data
+
+[rsync]
+#程序主目录
+apphome = /opt/mysql_backup
+#远程备份主机
+remotehost = 192.168.103.5
+#本地数据目录
+localdir = /data/dbbak/
+#远程数据目录(需预先创建)
+remotedir = /data/databak/huihu
+#本地BINLOG目录
+localbinlog = /data/db/mysql/binlog
+#远程BINLOG目录(需预先创建)
+remotebinlog = /data/binlogbak/huihu
+
+6.加入cron自动执行(每天备份一次，每小时同步一次)
+Crontab
+1 0 * * * /bin/python /opt/mysql_backup/bin/maria_backup.py > /opt/mysql_backup/log/cron.log 2>&1
+0 * * * * /opt/mysql_backup/bin/rsync_data.sh > /dev/null 2>&1
